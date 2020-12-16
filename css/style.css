@@ -1,0 +1,394 @@
+/* Reset */
+body, p, h1, ul, li {
+	padding: 0px;
+	margin: 0px;
+}
+
+li {
+	list-style: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Header */
+.header {
+    background: #F2F2F2;
+    padding: 20px 0;
+}
+
+.header-menu ul {
+    display: flex;
+    float: right;
+}
+
+.header-menu ul li a {
+    display: block;
+    padding: 10px;
+    margin-left: 5px;
+    font-size: 1em;
+    color: #252525;
+}
+
+.btn {
+    background:#4455DD;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+@media (max-width: 739px) {
+    .btn {
+        text-align: center;
+    }
+}
+
+
+/* Intro */
+
+.intro {
+    padding: 60px 0;
+}
+
+.intro-texto h2 {
+    font-size: 2.625em;
+    max-width: 400px;
+    font-family: sans-serif;
+    color: #252525;
+}
+
+.intro-texto a {
+    background: #4455DD;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+@media (max-width: 739px) {
+    .intro {
+        padding: 40px 0;
+    }
+
+    .intro-texto h2 {
+        text-align: center;
+    }
+    .intro-texto a {
+        display: block;
+        text-align: center;
+    }
+    .intro-texto {
+        margin-bottom: 40px;
+    }
+}
+/* TAXAS */
+
+.taxas {
+    background: #4455DD;
+    padding: 60px 0;
+}
+
+.taxas ul li {
+    background: #fff;
+    padding: 30px;
+    border-radius: 4px;
+}
+
+.taxas ul li h2 {
+    font-size: 1.25em;
+}
+
+.taxas ul li span {
+    color: #4455DD;
+}
+
+.taxas ul li h2::after {
+    content: "";
+    display: block;
+    width: 39px;
+    height: 2px;
+    background: #DEDEDE;
+    margin: 10px 0;
+}
+
+.taxas ul li p {
+    font-size: 1em;
+    color: #808080;
+}
+
+.taxas a {
+    display: block;
+    background: #4455DD;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0 0 0;
+    border-radius: 4px; 
+    color: #fff;
+}
+
+@media (max-width: 739px) {
+    .taxas {
+        padding-top: 40px;
+        padding-bottom: 5px;
+    }
+    .taxas ul li {
+        margin-bottom: 40px;
+    }
+}
+
+/* Acesso */
+
+.acesso {
+    padding: 60px 0;
+}
+
+.acesso-titulo {
+    text-align: center;
+    font-size: 2.625em;
+    font-weight: normal;
+    color: #252525;
+    margin-bottom: 60px;
+}
+
+.acesso img {
+    margin: 0 auto;
+}
+
+.acesso-itens h2 {
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.acesso-itens p {
+    font-size: 1em;
+    width: 256px;
+    text-align: center;
+    margin: 0 auto;
+    color: #808080;
+    line-height: 20px;
+}
+
+.acesso a {
+    color: #fff;
+    background: #4455DD;
+	text-align: center;
+	font-size: 1.25em;
+	display: block;
+	width: 200px;
+	padding: 15px;
+    margin: 30px auto 0 auto;
+    border-radius: 4px;
+}
+
+@media (max-width: 739px) {
+    .acesso {
+        padding: 40px 0;
+    } 
+    .acesso-itens {
+        margin-bottom: 40px;
+    }  
+    .acesso a {
+        margin: 0 auto;
+    }
+}
+
+/* IMAGEM */
+
+.imagem {
+    background: url("../img/imagem.png") no-repeat center;
+    background-size: cover;
+    height: 700px;
+    padding: 0 0 0 0;
+    color: #fff;
+}
+
+.blockquote {
+    padding: 150px 0 0 0;
+}
+
+.blockquote p {
+    font-size: 2.625em;
+    max-width: 683px;
+    font-style: italic;
+}
+
+.blockquote:before {
+    content: "“";   
+    font-size: 12.5em;
+    position: relative;
+    top: 100px;
+    color: #4455DD;
+}
+
+.blockquote cite {
+    display: block;
+    font-size: 1.25em;
+    color: #AFAFAF;
+    margin-top: 12px;
+}
+
+@media (max-width: 739px) {
+    .blockquote p {
+        font-size: 1.25em;
+    }   
+    .blockquote:before {
+        left: -80px;
+    }
+    .blockquote cite {
+        font-size: 1em;
+    }
+}
+
+/* criar conta - formulario */
+
+.conta {
+    padding: 60px 0;
+    background: #F2F2F2;
+}
+
+
+.criar-conta h2 {
+    text-align: center;
+    font-size: 2.625em;
+    margin-bottom: 60px;
+    color: #252525;
+}
+
+.form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form label {
+    display: block;
+    font-size: 1.25em;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form input {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 50px;
+    background: #DDDDDD;
+    border: none;
+    border-radius: 4px;
+}
+
+.botao {
+    color: #fff;
+    background: #4455DD;
+	text-align: center;
+	font-size: 1.25em;
+	display: block;
+	width: 200px;
+	padding: 15px;
+    margin: 20px auto 0 auto;
+    border: none;
+    border-radius: 4px;
+}
+
+.suporte {
+    text-align: center;
+}
+
+.suporte img{
+    margin: 90px auto 0 auto;
+}
+
+.suporte p {
+    font-size: 1.25em;
+    color: #252525;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 739px) {
+   .conta {
+       padding: 40px 0;
+   }    
+   .suporte img {
+       margin-top: 40px;
+   }
+}
+/* footer */
+
+.footer {
+    background: #000;
+    color: #fff;
+}
+
+.itens {
+    padding: 60px 0;
+}
+
+.footer h2 {
+    font-size: 1.25em;
+}
+
+.footer-itens ul {
+    margin-right: 10px;
+}
+
+.footer-itens ul li a {
+    display: block;
+    color: #fff;
+    padding: 0px 10px 0 0;
+    margin-bottom: 10px;
+}
+
+.footer-itens ul li a:before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 2px;
+    background: #3B3B3B;
+    margin: 0 7px 5px 0;
+    
+}
+
+.redes-sociais ul li {
+    padding: 10px;
+    margin-right: 15px;
+    border: 4px solid #4455DD;
+}
+
+.sobre p {
+    max-width: 351px;
+    font-size: 1em;
+    color: #808080;
+    line-height: 1.4em;
+}
+
+.copy {
+    padding: 40px 0;
+    background: #4455DD;
+    font-size: 1em;
+    line-height: 1.4em;
+    text-align: center;
+}
+
+.copy p {
+    margin: 0 auto;
+}
+
+@media (max-width: 739px) {
+    .redes-sociais ul li {
+        width: 60px;
+        margin-bottom: 20px;
+    }   
+}   
